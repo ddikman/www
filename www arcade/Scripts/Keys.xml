@@ -1,0 +1,22 @@
+<Root>
+  <Keys>
+    <Key Name="Player1KeyLeft" Value="37" />
+    <Key Name="Player1KeyRight" Value="39" />
+    <Key Name="Player1KeyUp" Value="38" />
+    <Key Name="Player1KeyDown" Value="40" />
+    <Key Name="Player1Key1" Value="17" />
+    <Key Name="Player1Key2" Value="18" />
+    <Key Name="Player1Key3" Value="32" />
+    
+    <Key Name="Player2KeyLeft" Value="68" />
+    <Key Name="Player2KeyRight" Value="70" />
+    <Key Name="Player2KeyUp" Value="82" />
+    <Key Name="Player2KeyDown" Value="71" />
+    <Key Name="Player2Key1" Value="65" />
+    <Key Name="Player2Key2" Value="83" />
+    <Key Name="Player2Key3" Value="81" />
+
+    <Key Name="PauseKey" Value="27" />
+    <Key Name="EnterKey" Value="13" />
+  </Keys>
+</Root>

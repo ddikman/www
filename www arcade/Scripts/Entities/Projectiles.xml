@@ -1,0 +1,81 @@
+<Root>
+  <Entity Type="ProjectilePurple">
+    <Property Type="TargetProjectile" >
+      <ProjectileSettings Velocity="550.0" Falloff="400.0" ManaCost="40"  Type="Purple">
+        <SplashParticle File="Projectiles.rsc" Name="PurpleProjectileSplash" RenderLayer="Particles" Sound="PurpleSplash" />
+      </ProjectileSettings>
+    </Property>
+    <Property Type="Particles">
+      <Base RenderLayer="Projectiles">
+        <ParticleSystem File="Projectiles.rsc" System="PurpleProjectileHead" EmmisionDelta="0.0" />
+        <ParticleSystem File="Projectiles.rsc" System="PurpleProjectileBody" EmmisionDelta="0.0" />
+        <ParticleSystem File="Projectiles.rsc" System="PurpleProjectileSparks" EmmisionDelta="0.0" />
+      </Base>
+    </Property>
+    <Property Type="Collidable">
+      <CollisionBase CollisionGroup="Player">
+        <Collision Radius="8" OffsetX="0" OffsetY="0" />
+      </CollisionBase>
+    </Property>
+  </Entity>
+
+  <Entity Type="ProjectileNormal">
+    <Property Type="TargetProjectile" >
+      <ProjectileSettings Velocity="550.0" Falloff="400.0" ManaCost="10" Type="Normal" >
+        <SplashParticle File="Projectiles.rsc" Name="NormalProjectileSplash" RenderLayer="Particles" Sound="NormalSplash"/>
+      </ProjectileSettings>
+    </Property>
+    <Property Type="Particles">
+      <Base RenderLayer="Projectiles">
+        <ParticleSystem File="Projectiles.rsc" System="NormalProjectileHead" EmmisionDelta="0.0" />
+        <ParticleSystem File="Projectiles.rsc" System="NormalProjectileBody" EmmisionDelta="0.0" />
+        <ParticleSystem File="Projectiles.rsc" System="NormalProjectileSparks" EmmisionDelta="0.0" />
+      </Base>
+    </Property>
+    <Property Type="Collidable">
+      <CollisionBase CollisionGroup="Player">
+        <Collision Radius="8" OffsetX="0" OffsetY="0" />
+      </CollisionBase>
+    </Property>
+  </Entity>
+
+  <Entity Type="ProjectileFire">
+    <Property Type="TargetProjectile" >
+      <ProjectileSettings Velocity="550.0" Falloff="400.0" ManaCost="20" Type="Fire">
+        <SplashParticle File="Projectiles.rsc" Name="FireProjectileSplash" RenderLayer="Particles" Sound="FireSplash"/>
+      </ProjectileSettings>
+    </Property>
+    <Property Type="Particles">
+      <Base RenderLayer="Projectiles">
+        <ParticleSystem File="Projectiles.rsc" System="FireProjectileHead" EmmisionDelta="0.0" />
+        <ParticleSystem File="Projectiles.rsc" System="FireProjectileBody" EmmisionDelta="0.0" />
+        <ParticleSystem File="Projectiles.rsc" System="FireProjectileSparks" EmmisionDelta="0.0" />
+      </Base>
+    </Property>
+    <Property Type="Collidable">
+      <CollisionBase CollisionGroup="Player">
+        <Collision Radius="8" OffsetX="0" OffsetY="0" />
+      </CollisionBase>
+    </Property>
+  </Entity>
+
+  <Entity Type="ProjectileIce">
+    <Property Type="TargetProjectile" >
+      <ProjectileSettings Velocity="550.0" Falloff="400.0" ManaCost="20" Type="Ice">
+        <SplashParticle File="Projectiles.rsc" Name="IceProjectileSplash" RenderLayer="Particles" Sound="IceSplash"/>
+      </ProjectileSettings>
+    </Property>
+    <Property Type="Particles">
+      <Base RenderLayer="Projectiles">
+        <ParticleSystem File="Projectiles.rsc" System="IceProjectileHead" EmmisionDelta="0.0" />
+        <ParticleSystem File="Projectiles.rsc" System="IceProjectileBody" EmmisionDelta="0.0" />
+        <ParticleSystem File="Projectiles.rsc" System="IceProjectileSparks" EmmisionDelta="0.0" />
+      </Base>
+    </Property>
+    <Property Type="Collidable">
+      <CollisionBase CollisionGroup="Player">
+        <Collision Radius="8" OffsetX="0" OffsetY="0" />
+      </CollisionBase>
+    </Property>
+  </Entity>
+</Root>

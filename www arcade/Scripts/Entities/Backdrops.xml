@@ -1,0 +1,68 @@
+<Root>
+  <Entity Type="InstructionBackdrop">
+    <Property Type="Renderable">
+      <Animation AnimationName="InstructionBackdropAnimation" AnimationFile="Backdrops.rsc" RenderLayer="Background" />
+    </Property>
+  </Entity>
+  <Entity Type="CreditsBackdrop">
+    <Property Type="Renderable">
+      <Animation AnimationName="CreditsBackdropAnimation" AnimationFile="Backdrops.rsc" RenderLayer="Background" />
+    </Property>
+  </Entity>
+  <Entity Type="MainBackdrop">
+		<Property Type="Renderable">
+			<Animation AnimationName="MainBackdropAnimation" AnimationFile="Backdrops.rsc" RenderLayer="Background" />
+		</Property>
+	</Entity>
+  <Entity Type="HGELogo">
+    <Property Type="Renderable">
+      <Animation AnimationName="HGELogoAnimation" AnimationFile="MainMenuItems.rsc" RenderLayer="MenuCaption" />
+    </Property>
+  </Entity>
+  <Entity Type="FMODLogo">
+    <Property Type="Renderable">
+      <Animation AnimationName="FMODLogoAnimation" AnimationFile="MainMenuItems.rsc" RenderLayer="MenuCaption" />
+    </Property>
+  </Entity>
+  <Entity Type="MainMenuCaption">
+    <Property Type="Renderable">
+      <Animation AnimationName="MainMenuCaptionAnim" AnimationFile="MenuCaptions.rsc" RenderLayer="MenuCaption" />
+    </Property>
+  </Entity>
+  <Entity Type="PauseCaption">
+    <Property Type="Renderable">
+      <Animation AnimationName="PauseCaptionAnim" AnimationFile="MenuCaptions.rsc" RenderLayer="MenuCaption" />
+    </Property>
+  </Entity>
+  <Entity Type="HighscoreCaption">
+    <Property Type="Renderable">
+      <Animation AnimationName="HighscoreCaptionAnim" AnimationFile="MenuCaptions.rsc" RenderLayer="MenuCaption" />
+    </Property>
+  </Entity>
+  <Entity Type="EnterHighscoreCaption">
+    <Property Type="Renderable">
+      <Animation AnimationName="EnterHighscoreCaptionAnim" AnimationFile="MenuCaptions.rsc" RenderLayer="MenuCaption" />
+    </Property>
+  </Entity>
+  <Entity Type="GameBackdrop">
+    <Property Type="Renderable">
+      <Animation AnimationName="GameBackdropAnimation" AnimationFile="Backdrops.rsc" RenderLayer="Background" />
+    </Property>
+  </Entity>
+  <Entity Type="GameBackdropTorchNear">
+    <Property Type="Particles">
+      <Base RenderLayer="Background">
+        <ParticleSystem File="Backdrops.rsc" System="TorchGlow1" EmmisionDelta="0.0" />
+        <ParticleSystem File="Backdrops.rsc" System="TorchFire1" EmmisionDelta="0.0" />
+      </Base>
+    </Property>
+  </Entity>
+  <Entity Type="GameBackdropTorchFar">
+    <Property Type="Particles">
+      <Base RenderLayer="Background">
+        <ParticleSystem File="Backdrops.rsc" System="TorchGlow1" EmmisionDelta="0.0" />
+        <ParticleSystem File="Backdrops.rsc" System="TorchFire2" EmmisionDelta="0.0" />
+      </Base>
+    </Property>
+  </Entity>
+</Root>

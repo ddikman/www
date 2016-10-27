@@ -1,0 +1,22 @@
+<Root>
+  <Menu Name="MainMenu" BackdropEntity="MainBackdrop" CaptionEntity="MainMenuCaption">
+    <Button X="512" Y="250" ResourceFile="MainMenuItems.rsc" IdleAnimation="Player1UnSelectedAnim" 
+      SelectAnimation="Player1SelectedAnim" TargetState="Game" ID="1" />
+    <Button X="512" Y="315" ResourceFile="MainMenuItems.rsc" IdleAnimation="Player2UnSelectedAnim"
+      SelectAnimation="Player2SelectedAnim" TargetState="Game" ID="2" />
+    <Button X="512" Y="380" ResourceFile="MainMenuItems.rsc" IdleAnimation="InstructionsUnSelectedAnim"
+      SelectAnimation="InstructionsSelectedAnim" TargetState="Instructions" ID="0" />
+    <Button X="512" Y="445" ResourceFile="MainMenuItems.rsc" IdleAnimation="HighscoreUnSelectedAnim"
+      SelectAnimation="HighscoreSelectedAnim" TargetState="ShowHighscore" ID="0" />
+    <Button X="512" Y="510" ResourceFile="MainMenuItems.rsc" IdleAnimation="CreditsUnSelectedAnim"
+      SelectAnimation="CreditsSelectedAnim" TargetState="Credits" ID="0" />
+    <Button X="512" Y="575" ResourceFile="MainMenuItems.rsc" IdleAnimation="QuitUnSelectedAnim"
+      SelectAnimation="QuitSelectedAnim" TargetState="Quit" ID="0" />
+  </Menu>
+  <Menu Name="PauseMenu" BackdropEntity="MainBackdrop" CaptionEntity="PauseCaption">
+    <Button X="512" Y="315" ResourceFile="PauseMenuItems.rsc" IdleAnimation="ResumeUnSelectedAnim"
+      SelectAnimation="ResumeSelectedAnim" TargetState="Game" ID="0" />
+    <Button X="512" Y="380" ResourceFile="PauseMenuItems.rsc" IdleAnimation="MainMenuUnSelectedAnim"
+      SelectAnimation="MainMenuSelectedAnim" TargetState="MainMenu" ID="0" />
+  </Menu>
+</Root>

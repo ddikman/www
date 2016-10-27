@@ -1,0 +1,159 @@
+<Root>
+  <Entity Type="SingleLevelSpawner">
+    <Property Type="MultiLevelSpawner">
+      <Settings ChickenRaceChance="1.5"
+        SpawnStart="0.4" SpawnDelta="0.0022" SpawnMax="3.0"
+		    FireIceStart="5" FireIceDelta="0.32" FireIceMax="45"
+		    SpeedStart="20" SpeedDelta="0.10" SpeedMax="60" SpeedIntervall="5"
+		    CurveStart="0" CurveDelta="0.124" CurveMax="75" CurveIntervall="5"
+        SpawnChangeStart="250" SpawnChange="0.5" SpawnChangeMax="200" SpawnIntervall="50"
+        SpawnTime="25" SpawnPause="5"
+        />
+    </Property>
+  </Entity>
+  <Entity Type="MultiLevelSpawner">
+    <Property Type="MultiLevelSpawner">
+      <Settings ChickenRaceChance="1.5"
+        SpawnStart="0.8" SpawnDelta="0.0031" SpawnMax="4.5"
+        PurpleStart="1" PurpleDelta="0.05" PurpleMax="3"
+		    FireIceStart="5" FireIceDelta="0.32" FireIceMax="45"
+		    SpeedStart="20" SpeedDelta="0.10" SpeedMax="60" SpeedIntervall="5"
+		    CurveStart="0" CurveDelta="0.124" CurveMax="75" CurveIntervall="5"
+        SpawnChangeStart="100" SpawnChange="0.5" SpawnChangeMax="200" SpawnIntervall="250"
+        SpawnTime="25" SpawnPause="5"
+        />
+    </Property>
+  </Entity>
+  
+  <Entity Type="NormalEnemy">
+    <Property Type="Renderable">
+      <Animation AnimationName="EnemyNormalAnimation" AnimationFile="Enemy.rsc" RenderLayer="Player" />
+    </Property>
+    <Property Type="EnemyController">
+      <LostLife Sound="LifeLost" />
+    </Property>
+    <Property Type="Collidable">
+      <CollisionBase CollisionGroup="Enemy">
+        <Collision Radius="24" OffsetX="-0" OffsetY="-0.0" />
+      </CollisionBase>
+    </Property>
+    <Property Type="Particles">
+      <Base RenderLayer="Player">
+        <ParticleSystem File="Enemy.rsc" System="EnemyNormalSparks" EmmisionDelta="0.0" />
+      </Base>
+    </Property>
+    <Property Type="NormalHealth">
+      <Health Hits="3" Type="Normal" PurpleHitIntervall="2" MinPoints="10" MaxPoints="1000" />
+      <Explosion File="Enemy.rsc" Name="EnemyNormalExplosionSystem" Layer="Particles" />
+      <DeathAnimation File="Enemy.rsc" Name="EnemyNormalDeathAnimation" Layer="Player" Sound="EnemyDeath"/>
+      <HurtAnimation File="Enemy.rsc" Name="EnemyNormalHurtAnimation" HurtTime="1" />
+    </Property>
+  </Entity>
+
+  <Entity Type="FireEnemy">
+    <Property Type="Renderable">
+      <Animation AnimationName="EnemyFireAnimation" AnimationFile="Enemy.rsc" RenderLayer="Player" />
+    </Property>
+    <Property Type="EnemyController">
+      <LostLife Sound="LifeLost" />
+    </Property>
+    <Property Type="Collidable">
+      <CollisionBase CollisionGroup="Enemy">
+        <Collision Radius="24" OffsetX="-0" OffsetY="-0.0" />
+      </CollisionBase>
+    </Property>
+    <Property Type="Particles">
+      <Base RenderLayer="Player">
+        <ParticleSystem File="Enemy.rsc" System="EnemyFireSparks" EmmisionDelta="0.0" />
+      </Base>
+    </Property>
+    <Property Type="NormalHealth">
+      <Health Hits="3" Type="Fire" PurpleHitIntervall="2" MinPoints="10" MaxPoints="1000" />
+      <Explosion File="Enemy.rsc" Name="EnemyFireExplosionSystem" Layer="Particles" />
+      <DeathAnimation File="Enemy.rsc" Name="EnemyRedDeathAnimation" Layer="Player" Sound="EnemyDeath"/>
+      <HurtAnimation File="Enemy.rsc" Name="EnemyRedHurtAnimation" HurtTime="1" Sound="EnemyHurt"/>
+    </Property>
+  </Entity>
+
+  <Entity Type="IceEnemy">
+    <Property Type="Renderable">
+      <Animation AnimationName="EnemyIceAnimation" AnimationFile="Enemy.rsc" RenderLayer="Player" />
+    </Property>
+    <Property Type="EnemyController">
+      <LostLife Sound="LifeLost" />
+    </Property>
+    <Property Type="Collidable">
+      <CollisionBase CollisionGroup="Enemy">
+        <Collision Radius="24" OffsetX="-0" OffsetY="-0.0" />
+      </CollisionBase>
+    </Property>
+    <Property Type="Particles">
+      <Base RenderLayer="Player">
+        <ParticleSystem File="Enemy.rsc" System="EnemyIceSparks" EmmisionDelta="0.0" />
+      </Base>
+    </Property>
+    <Property Type="NormalHealth">
+      <Health Hits="3" Type="Ice" PurpleHitIntervall="2" MinPoints="10" MaxPoints="1000" />
+      <Explosion File="Enemy.rsc" Name="EnemyIceExplosionSystem" Layer="Particles" />
+      <DeathAnimation File="Enemy.rsc" Name="EnemyBlueDeathAnimation" Layer="Player" Sound="EnemyDeath"/>
+      <HurtAnimation File="Enemy.rsc" Name="EnemyBlueHurtAnimation" HurtTime="1" Sound="EnemyHurt"/>
+    </Property>
+  </Entity>
+
+  <Entity Type="PurpleEnemy">
+    <Property Type="Renderable">
+      <Animation AnimationName="EnemyPurpleAnimation" AnimationFile="Enemy.rsc" RenderLayer="Player" />
+    </Property>
+    <Property Type="EnemyController">
+      <LostLife Sound="LifeLost" />
+    </Property>
+    <Property Type="Collidable">
+      <CollisionBase CollisionGroup="Enemy">
+        <Collision Radius="24" OffsetX="-0" OffsetY="-0.0" />
+      </CollisionBase>
+    </Property>
+    <Property Type="Particles">
+      <Base RenderLayer="Player">
+        <ParticleSystem File="Enemy.rsc" System="EnemyPurpleSparks" EmmisionDelta="0.0" />
+      </Base>
+    </Property>
+    <Property Type="NormalHealth">
+      <Health Hits="3" Type="Purple" PurpleHitIntervall="2" MinPoints="10" MaxPoints="1000" />
+      <Explosion File="Enemy.rsc" Name="EnemyPurpleExplosionSystem" Layer="Particles" />
+      <DeathAnimation File="Enemy.rsc" Name="EnemyPurpleDeathAnimation" Layer="Player" Sound="EnemyDeath"/>
+      <HurtAnimation File="Enemy.rsc" Name="EnemyPurpleHurtAnimation" HurtTime="1" />
+    </Property>
+  </Entity>
+
+  <Entity Type="GoldEnemy">
+    <Property Type="Renderable">
+      <Animation AnimationName="EnemyGoldAnimation" AnimationFile="Enemy.rsc" RenderLayer="Player" />
+    </Property>
+    <Property Type="EnemyController">
+      <LostLife Sound="LifeLost" />
+    </Property>
+    <Property Type="Collidable">
+      <CollisionBase CollisionGroup="Enemy">
+        <Collision Radius="24" OffsetX="-0" OffsetY="-0.0" />
+      </CollisionBase>
+    </Property>
+    <Property Type="NormalHealth">
+      <Health Hits="3" Type="Gold" PurpleHitIntervall="2" MinPoints="10000" MaxPoints="10" />
+      <Explosion File="Enemy.rsc" Name="EnemyGoldExplosionSystem" Layer="Particles" />
+      <DeathAnimation File="Enemy.rsc" Name="EnemyGoldDeathAnimation" Layer="Player" Sound="Bonus"/>
+      <HurtAnimation File="Enemy.rsc" Name="EnemyGoldHurtAnimation" HurtTime="1" />
+    </Property>
+    <Property Type="Particles">
+      <Base RenderLayer="Player">
+        <ParticleSystem File="Enemy.rsc" System="EnemyGoldSparks1" EmmisionDelta="0.150" LifeTimeDelta="0.05" />
+        <ParticleSystem File="Enemy.rsc" System="EnemyGoldSparks2" EmmisionDelta="0.02" LifeTimeDelta="0.05" />
+      </Base>
+    </Property>
+  </Entity>
+
+  <Entity Type="PointsTag">
+    <Property Type="PointsTag">
+      <Properties FadeOut="2.0" DriftVelocity="8.0" FontFile="Graphics\Font\ChillerSmall.fnt" />
+    </Property>
+  </Entity>
+</Root>

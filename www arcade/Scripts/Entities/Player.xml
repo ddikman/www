@@ -1,0 +1,95 @@
+<Root>
+  <Entity Type="PlayerFire">
+    <Property Type="Renderable">
+      <Animation AnimationName="PlayerFireAnimation" AnimationFile="Player.rsc" RenderLayer="Player" />
+    </Property>
+    <Property Type="PlayerCursor">
+      <Cursor CursorVelocity="0.25" SpeedUpFactor="3.5"  CursorDistance="70.0" AnimationName="ArrowFireSprite" AnimationFile="Player.rsc" />
+      <CursorParticle ParticleName="CursorFireParticle" ParticleFile="Player.rsc" />
+      <Aim AimDistance="500.0f" ParticleName="AimFireParticle" ParticleFile="Player.rsc" />
+      <Trajectory Red="1.0" Blue="0.5" Green="0.5" Alpha="1.0" />
+      <Controls UpKey="Player1KeyUp" DownKey="Player1KeyDown" SpeedUpKey1="Player1KeyLeft" SpeedUpKey2="Player1KeyRight" />
+    </Property>
+    <Property Type="PlayerMana">
+      <Properties ManaRecoveryRate="80.0" Cooldown="0.60" MaxMana="120" PositionX="10" PositionY="726" Particle="ManaDrainFire" />
+      <ManaBackground AnimationFile="Gui.rsc" AnimationName="ManaBarBackground" />
+      <ManaFrame AnimationFile="Gui.rsc" AnimationName="ManaBarFrame" />
+      <ManaBar AnimationFile="Gui.rsc" AnimationName="ManaBarFire" />
+    </Property>
+    <Property Type="PlayerPoints">
+      <Properties FontFile="Graphics\Font\ChillerSmall.fnt" PositionX="148" PositionY="723" CountTime="0.5" 
+                  LevelTime="30.0" MultiplierPositionX="348" MultiplierPositionY="723" />
+    </Property>
+    <Property Type="PlayerLauncher">
+      <Projectile ProjectileName="ProjectileNormal" LaunchKey="Player1Key2" LaunchSound="NormalShot" LaunchParticle="ManaDrainFire"/>
+      <Projectile ProjectileName="ProjectileFire" LaunchKey="Player1Key1" LaunchSound="FireShot" LaunchParticle="ManaDrainFire" />
+      <Projectile ProjectileName="ProjectilePurple" LaunchKey="Player1Key3" LaunchSound="PurpleShot" LaunchParticle="ManaDrainFire" />
+    </Property>
+  </Entity>
+
+  <Entity Type="PlayerIce">
+    <Property Type="Renderable">
+      <Animation AnimationName="PlayerIceAnimation" AnimationFile="Player.rsc" RenderLayer="Player" />
+    </Property>
+    <Property Type="PlayerCursor">
+      <Cursor CursorVelocity="0.25" SpeedUpFactor="3.5" CursorDistance="70.0" AnimationName="ArrowIceSprite" AnimationFile="Player.rsc" />
+      <CursorParticle ParticleName="CursorIceParticle" ParticleFile="Player.rsc" />
+      <Aim AimDistance="500.0" ParticleName="AimIceParticle" ParticleFile="Player.rsc" />
+      <Trajectory Red="0.5" Blue="1.0" Green="0.5" Alpha="1.0" />
+      <Controls UpKey="Player2KeyUp" DownKey="Player2KeyDown" SpeedUpKey1="Player2KeyLeft" SpeedUpKey2="Player2KeyRight" />
+    </Property>
+    <Property Type="PlayerMana">
+      <Properties ManaRecoveryRate="80.0" Cooldown="0.60" MaxMana="120" PositionX="886" PositionY="726" Particle="ManaDrainIce" />
+      <ManaBackground AnimationFile="Gui.rsc" AnimationName="ManaBarBackground" />
+      <ManaFrame AnimationFile="Gui.rsc" AnimationName="ManaBarFrame" />
+      <ManaBar AnimationFile="Gui.rsc" AnimationName="ManaBarIce" />
+    </Property>
+    <Property Type="PlayerPoints">
+      <Properties FontFile="Graphics\Font\ChillerSmall.fnt" PositionX="697" PositionY="723" CountTime="0.5"
+            LevelTime="30.0" MultiplierPositionX="630" MultiplierPositionY="723" />
+    </Property>
+    <Property Type="PlayerLauncher">
+      <Projectile ProjectileName="ProjectileNormal" LaunchKey="Player2Key2" LaunchSound="NormalShot" LaunchParticle="ManaDrainIce"/>
+      <Projectile ProjectileName="ProjectileIce" LaunchKey="Player2Key1" LaunchSound="IceShot" LaunchParticle="ManaDrainIce"/>
+      <Projectile ProjectileName="ProjectilePurple" LaunchKey="Player2Key3" LaunchSound="PurpleShot" LaunchParticle="ManaDrainIce"/>
+    </Property>
+  </Entity>
+
+  <Entity Type="PlayerSingle">
+    <Property Type="Renderable">
+      <Animation AnimationName="PlayerSingleAnimation" AnimationFile="Player.rsc" RenderLayer="Player" />
+    </Property>
+    <Property Type="PlayerCursor">
+      <Cursor CursorVelocity="0.25" SpeedUpFactor="3.5"  CursorDistance="70.0" AnimationName="ArrowSingleSprite" AnimationFile="Player.rsc" />
+      <CursorParticle ParticleName="CursorSingleParticle" ParticleFile="Player.rsc" />
+      <Aim AimDistance="500.0f" ParticleName="AimSingleParticle" ParticleFile="Player.rsc" />
+      <Trajectory Red="0.0" Blue="0.0" Green="1.0" Alpha="1.0" />
+      <Controls UpKey="Player1KeyUp" DownKey="Player1KeyDown" SpeedUpKey1="Player1KeyLeft" SpeedUpKey2="Player1KeyRight" />
+    </Property>
+    <Property Type="PlayerMana">
+      <Properties ManaRecoveryRate="80.0" Cooldown="0.75" MaxMana="120" PositionX="10" PositionY="726" Particle="ManaDrainSingle" />
+      <ManaBackground AnimationFile="Gui.rsc" AnimationName="ManaBarBackground" />
+      <ManaFrame AnimationFile="Gui.rsc" AnimationName="ManaBarFrame" />
+      <ManaBar AnimationFile="Gui.rsc" AnimationName="ManaBarGreen" />
+    </Property>
+    <Property Type="PlayerPoints">
+      <Properties FontFile="Graphics\Font\ChillerSmall.fnt" PositionX="148" PositionY="723" CountTime="0.5"
+                  LevelTime="30.0" MultiplierPositionX="348" MultiplierPositionY="723" />
+    </Property>
+    <Property Type="PlayerLauncher">
+      <Projectile ProjectileName="ProjectileFire" LaunchKey="Player1Key1" LaunchSound="FireShot" LaunchParticle="ManaDrainSingle"/>
+      <Projectile ProjectileName="ProjectileNormal" LaunchKey="Player1Key2" LaunchSound="NormalShot" LaunchParticle="ManaDrainSingle"/>
+      <Projectile ProjectileName="ProjectileIce" LaunchKey="Player1Key3" LaunchSound="IceShot" LaunchParticle="ManaDrainSingle"/>
+    </Property>
+  </Entity>
+
+  <Entity Type="Health">
+    <Property Type="PlayerHealth">
+      <Properties FontFile="Graphics\Font\ChillerSmall.fnt" OffsetX="0.0" OffsetY="-22.0" Lives="20" />
+    </Property>
+    <Property Type="Renderable">
+      <Animation AnimationName="HeartAnimation" AnimationFile="Player.rsc" RenderLayer="Particles" />
+    </Property>
+  </Entity>
+  
+</Root>

@@ -1,0 +1,6 @@
+<Root>
+  <EnterHighscore DistanceFromEdgeX="50" DistanceFromBottom="150" NameMaxLength="5" 
+    BackdropEntity="MainBackdrop" CaptionEntity="EnterHighscoreCaption"/>
+  <ShowHighscore Column1X="200" Column2X="400" Column3X="700" RowStartY="200" RowOffset="32" 
+    SectionOffset="40" BackdropEntity="MainBackdrop" CaptionEntity="HighscoreCaption"/>
+</Root>

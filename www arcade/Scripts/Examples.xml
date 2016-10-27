@@ -1,0 +1,59 @@
+<Root>
+  <Entity Type="Example">
+    <Property Type="Renderable">
+      <Animation AnimationName="ExampleAnim" AnimationFile="ExampleResource.rsc" RenderLayer="Background" />
+    </Property>
+    <Property Type="Collidable">
+      <CollisionBase CollisionGroup="Player">
+        <Collision Radius="0.5" OffsetX="0" OffsetY="0" />
+        <Collision Radius="0.5" OffsetX="0.5" OffsetY="0" />
+      </CollisionBase>
+    </Property>
+    <Property Type="MultiLevelSpawner">
+      <!--
+        TimePerLevel = Seconds for each level
+        CickenRaceChance = Precent chance of a chicken race per spawn.
+        
+        SpawnStart = How many enemies will spawn each second when the game starts
+        SpawnDelta = How many extra enemies will be spawned per second (0.25 = 1 extra every 4 second )
+        MaxSpawn = Maximum spawn speed for enemies
+        
+        PurpleStart = How large chance in percent for a prurple to spawn for each spawned enemy
+        PurpleDelta = How quickly should the chance increase each second
+        PurpleMax = How large is the can the chance get?
+        
+        FireIce = See Purple
+        
+        SpeedStart = How quickly will the enemies move in the beginning
+        SpeedDelta = How much quicker should the enemies get each second
+        SpeedMax = Max speed of enemies
+        
+        CurveStart = How much will the enemies go up and down in the beginning
+        CurveDelta = How much will de cruve change each second
+        MaxCurve = How much will they go up and down at max
+      -->
+      <Settings ChickenRaceChance="4" 
+        SpawnStart="2" SpawnDelta="0.25" SpawnMax="13"
+        PurpleStart="0" PurpleDelta="0.06" PurpleMax="30"
+		    FireIceStart="5" FireIceDelta="0.1" FireIceMax="60"
+		    SpeedStart="15" SpeedDelta="0.2" SpeedMax="100" SpeedIntervall="5"
+		    CurveStart="0" CurveDelta="0.07" CurveMax="20" CurveIntervall="5"
+        />
+    </Property>
+    <Property Type="EnemyController">
+    </Property>
+    <Property Type="NormalHealth">
+      <Health Hits="2" Type="Normal" />
+      <Explosion File="Particles.rsc" Name="Fireball" Layer="Particle" />
+    </Property>
+    <Property Type="Particles">
+      <Base RenderLayer="Hero">
+        <ParticleSystem File="Player.rsc" System="FireBallParticles" />
+        <ParticleSystem File="Player.rsc" System="FireTailParticles" />
+      </Base>
+    </Property>
+    <Property Type="TargetProjectile">
+      <ProjectileSettings Velocity="200.0" Type="Fire" />
+    </Property>
+  </Entity>
+</Root>

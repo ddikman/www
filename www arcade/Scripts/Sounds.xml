@@ -1,0 +1,21 @@
+<Root>
+  <Sounds>
+    <Sound Name="FireShot" File="Sound\FireShot.wav" Loop="0"/>
+    <Sound Name="IceShot" File="Sound\IceShot.wav" Loop="0"/>
+    <Sound Name="NormalShot" File="Sound\GreenShot.wav" Loop="0"/>
+    <Sound Name="PurpleShot" File="Sound\PurpleShot.wav" Loop="0"/>
+    <Sound Name="FireSplash" File="Sound\FireHit.wav" Loop="0"/>
+    <Sound Name="IceSplash" File="Sound\IceHit.wav" Loop="0"/>
+    <Sound Name="NormalSplash" File="Sound\GreenHit.wav" Loop="0"/>
+    <Sound Name="PurpleSplash" File="Sound\PurpleHit.wav" Loop="0"/>
+    <Sound Name="EnemyDeath" File="Sound\EnemyDeath.wav" Loop="0"/>
+    <Sound Name="EnemyHurt" File="Sound\EnemyHurt.wav" Loop="0"/>
+    <Sound Name="LifeLost" File="Sound\LifeLost.wav" Loop="0"/>
+    <Sound Name="Bonus" File="Sound\Bonus.wav" Loop="0"/>
+  </Sounds>
+  <Music>
+    <Song Name="GameMusic" File="Sound\GameMusic.MP3"/>
+    <Song Name="MenuMusic" File="Sound\MenuMusic.MP3"/>
+    <Song Name="TestMusic" File="Sound\EnemyDeath.wav"/>
+  </Music>
+</Root>
